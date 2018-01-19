@@ -1,0 +1,18 @@
+{
+  "eventName":"Circuit Odyssey",
+  "imageUrl":"",
+  "details":[
+    { "sectionHeader":"Introduction", "sectionContent":"Make your way forward through Snakes, Bombs and Brain teasing circuits and brag your spot at top. " },
+    { "sectionHeader":"Abstract", "sectionContent":"Learn Multisim, the Fun way!!! As software has become an integral part of circuit design, it is essential to harness the knowledge of software. Enjoy, Learn and Gain by participating in this event. " },
+    { "sectionHeader":"Description of Rounds", "sectionContent":"" },
+    { "sectionHeader":"Round 1 ", "sectionContent":"o This is basically a whisper round. o One of the team members will be given a limited time in which he/she needs to solve as many riddles as he/she can and whisper the answer to the other team member who will be wearing a headphone with loud music. o Teams with highest scores will proceed to round 2" },
+    { "sectionHeader":"Round 2 ", "sectionContent":"o In this round, there will be setup of snakes & ladders. o The team gets to decide who will stand on the setup and other person will roll a die. o After rolling of die each team will need to answer the question which will be dependent upon odds of the die. o Fastest teams to finish the race will win and proceed to round 3. " },
+    { "sectionHeader":"Round 3 ", "sectionContent":"o This round is basically an escape room.  o The teams will have to solve a simple circuit to generate a 3-digit code which will help you escape the room by diffusing the bomb attached to the door. o This is an elimination round so teams who’ll escape the room in least time will proceed to round 4. " },
+	{ "sectionHeader":"Round 4 ", "sectionContent":"o In this round the participants will be taught Multisim Software and will have to implement the circuit taught in Multi-Sim on Breadboard" },
+    { "sectionHeader":"Participation", "sectionContent":"Team of 2." }
+  ],
+  "contactDetails":[
+    { "name":"Shivjeetsinh Rana  ", "number":" +91 7043911723 "},
+    { "name":"Yesha Bhatt", "number":" +91 9998975738 "}
+  ]
+}
