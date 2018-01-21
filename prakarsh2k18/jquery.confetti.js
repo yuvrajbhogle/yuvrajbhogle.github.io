@@ -58,7 +58,7 @@
     function init() {
         SetGlobals();
         //InitializeButton();
-        setTimeout(InitializeConfetti, 3000);
+        setTimeout(InitializeConfetti, 5000);
         // InitializeConfetti();
 
         $(window).resize(function () {
