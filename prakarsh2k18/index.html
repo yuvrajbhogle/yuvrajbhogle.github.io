@@ -8,12 +8,18 @@
             }
     </style>  
 </head>
-<body>
+<body onload="auto()">
         <video muted playsinline autoplay id="myVideo" style="background-color:white; margin-top:-1em; margin-left:-1em; width:102%;">
             <source src="logo animiTrim.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="jquery.confetti.js"></script>
+    <script>
+        var v=document.getElementById("myVideo");
+        function auto() {
+      v.play();
+  }
+        </script>
 </body>
 </html>
