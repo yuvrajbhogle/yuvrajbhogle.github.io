@@ -2317,6 +2317,7 @@
          <a class="outer scroll-to-top  scroll" href="#wrapper">
             <div class="scroll-to-top-inner inner radius-2"><span class=" fas fa-arrow-up top-icon "></span></div>
          </a>
+	      <button id="hiddenButton" style="visibility:hidden;" onclick="setActiveStyleSheet('clr-1'); return false;" ></button>
          <!-- End to the top -->
       </div>
       <!-- End wrapper-->
@@ -2343,7 +2344,9 @@
 			   
 			   var y = "clr-"+x;
 			   console.log(y);
-			   setActiveStyleSheet(y);
+			   var z = "setActiveStyleSheet('"+y+"'); return false;"
+			   document.getElementById("hiddenButton").setAttribute("onclick", z);
+		           document.getElementById("hiddenButton").click();
 			   console.log("color should have been changed");
 		   // }, 5000);
 		  //getRandomArbitrary(min, max);
