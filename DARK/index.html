@@ -2338,7 +2338,10 @@
 		function getRandomArbitrary(min, max) {
 		    //setTimeout(function(){ 
 			   var x = Math.random() * (max - min) + min; 
-			   setActiveStyleSheet('clr-'+x);
+			   var y = "clr-"+x;
+			   console.log(y);
+			   setActiveStyleSheet(y);
+			   console.log("color should have been changed");
 		   // }, 5000);
 		  //getRandomArbitrary(min, max);
 		}
