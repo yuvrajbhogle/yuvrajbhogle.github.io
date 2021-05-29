@@ -2317,7 +2317,6 @@
          <a class="outer scroll-to-top  scroll" href="#wrapper">
             <div class="scroll-to-top-inner inner radius-2"><span class=" fas fa-arrow-up top-icon "></span></div>
          </a>
-	      <button id="hiddenButton" style="visibility:hidden;" onclick="setActiveStyleSheet('clr-1'); return false;" ></button>
          <!-- End to the top -->
       </div>
       <!-- End wrapper-->
@@ -2343,10 +2342,10 @@
 			var x = Math.floor(Math.random() * (max - min + 1)) + min;
 			   
 			   var y = "clr-"+x;
+		           var currentDate = new Date();
+				currentDate.setDate(currentDate.getDate() + 1);
 			   console.log(y);
-			   var z = "setActiveStyleSheet('"+y+"'); return false;"
-			   document.getElementById("hiddenButton").setAttribute("onclick", z);
-		           document.getElementById("hiddenButton").click();
+			   document.cookie = "style="+y+"; expires="+currentDate+"; path=/";
 			   console.log("color should have been changed");
 		   // }, 5000);
 		  //getRandomArbitrary(min, max);
