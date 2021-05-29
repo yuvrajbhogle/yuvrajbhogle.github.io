@@ -2337,7 +2337,10 @@
 	<script>
 		function getRandomArbitrary(min, max) {
 		    //setTimeout(function(){ 
-			   var x = Math.random() * (max - min) + min; 
+			min = Math.ceil(min);
+			max = Math.floor(max);
+			var x = return Math.floor(Math.random() * (max - min + 1)) + min;
+			   
 			   var y = "clr-"+x;
 			   console.log(y);
 			   setActiveStyleSheet(y);
