@@ -2374,12 +2374,12 @@
 		
 		function setTheme() {
 		  if(!getCookie("lightDark") || getCookie("lightDark")=="light"){
-		    swapStyleSheet("css/bootsrap.css","bootStrapC");
+		    swapStyleSheet("css/bootstrap.css","bootStrapC");
 		    swapStyleSheet("css/main.css","mainC");
 		   var y = "dark";
 		   document.cookie = "lightDark="+y+"; expires="+currentDate+"; path=/";
 		  } else{
-		    swapStyleSheet("css/bootsrap1.css","bootStrapC");
+		    swapStyleSheet("css/bootstrap1.css","bootStrapC");
 		    swapStyleSheet("css/main1.css","mainC");
 			var y = "light";
 		   document.cookie = "lightDark="+y+"; expires="+currentDate+"; path=/";
