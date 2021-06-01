@@ -8,8 +8,8 @@
       <meta name="description" content="">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <!-- Css -->
-      <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-      <link href="css/main.css" rel="stylesheet" type="text/css" media="all" />
+      <link id="bootStrapC" href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+      <link id="mainC" href="css/main.css" rel="stylesheet" type="text/css" media="all" />
       <link href="css/venobox.css" rel="stylesheet" type="text/css" media="all" />
       <link href="css/animate.css" rel="stylesheet" type="text/css" media="all"/>
       <link href="css/fonts.css" rel="stylesheet" type="text/css" media="all" />
@@ -2333,6 +2333,8 @@
       <script src="js/script.js"></script>
 	   
 	<script>
+		 var currentDate = new Date();
+			currentDate.setDate(currentDate.getDate() + 1);
 		function getRandomArbitrary(min, max) {
 		    //setTimeout(function(){ 
 			min = Math.ceil(min);
@@ -2340,8 +2342,6 @@
 			var x = Math.floor(Math.random() * (max - min + 1)) + min;
 			   
 			   var y = "clr-"+x;
-		           var currentDate = new Date();
-				currentDate.setDate(currentDate.getDate() + 1);
 			   console.log(y);
 			   document.cookie = "style="+y+"; expires="+currentDate+"; path=/";
 			   console.log("color should have been changed");
@@ -2349,6 +2349,44 @@
 		  //getRandomArbitrary(min, max);
 		}
 		getRandomArbitrary(1,33);
+		
+		
+		function swapStyleSheet(sheet, doc) {
+		    document.getElementById(doc).setAttribute("href", sheet);  
+		}
+
+		
+		function getCookie(cname) {
+		  var name = cname + "=";
+		  var decodedCookie = decodeURIComponent(document.cookie);
+		  var ca = decodedCookie.split(';');
+		  for(var i = 0; i <ca.length; i++) {
+		    var c = ca[i];
+		    while (c.charAt(0) == ' ') {
+		      c = c.substring(1);
+		    }
+		    if (c.indexOf(name) == 0) {
+		      return c.substring(name.length, c.length);
+		    }
+		  }
+		  return "";
+		}
+		
+		function setTheme() {
+		  if(!getCookie("lightDark") || getCookie("lightDark")=="light"){
+		    swapStyleSheet("bootsrap.css","bootStrapC");
+		    swapStyleSheet("main.css","mainC");
+		   var y = "dark";
+		   document.cookie = "lightDark="+y+"; expires="+currentDate+"; path=/";
+		  } else{
+		    swapStyleSheet("bootsrap1.css","bootStrapC");
+		    swapStyleSheet("main1.css","mainC");
+			var y = "light";
+		   document.cookie = "lightDark="+y+"; expires="+currentDate+"; path=/";
+		  }
+		}
+
+		window.onload = setTheme;
 		
 	</script>
       <!-- Google analytics -->
