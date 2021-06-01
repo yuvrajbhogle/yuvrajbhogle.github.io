@@ -2374,13 +2374,13 @@
 		
 		function setTheme() {
 		  if(!getCookie("lightDark") || getCookie("lightDark")=="light"){
-		    swapStyleSheet("bootsrap.css","bootStrapC");
-		    swapStyleSheet("main.css","mainC");
+		    swapStyleSheet("css/bootsrap.css","bootStrapC");
+		    swapStyleSheet("css/main.css","mainC");
 		   var y = "dark";
 		   document.cookie = "lightDark="+y+"; expires="+currentDate+"; path=/";
 		  } else{
-		    swapStyleSheet("bootsrap1.css","bootStrapC");
-		    swapStyleSheet("main1.css","mainC");
+		    swapStyleSheet("css/bootsrap1.css","bootStrapC");
+		    swapStyleSheet("css/main1.css","mainC");
 			var y = "light";
 		   document.cookie = "lightDark="+y+"; expires="+currentDate+"; path=/";
 		  }
