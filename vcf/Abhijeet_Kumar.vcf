@@ -1,0 +1,10 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Kumar;Abhijeet;;;
+FN:Abhijeet Kumar
+ORG:Coverfox
+TITLE:AVP - Key Accounts
+TEL;TYPE=CELL:9327733808
+EMAIL;TYPE=INTERNET:abhijeet.kumar@coverfox.com
+ADR;TYPE=WORK:;;Bengaluru;;;;
+END:VCARD
